@@ -1,0 +1,80 @@
+
+.order-now{
+   background: var(--body_background);
+   width: 100%;
+   min-height: 100vh;
+}
+.order-now .order-now-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background:var(--body_background);
+    padding: 12px 10px;
+    border: 1px solid var(--border_color);
+    border-radius: 10px;
+    width: 580px;
+    margin:26px auto;
+}
+.order-now .order-now-form .data{
+    flex-basis: 49%;
+    margin: 8px 0px;
+}
+.order-now .order-now-form .data label{
+    color: var(--btn_background);
+    font-size: 17px;
+    display: block;
+    margin: 4px 0px;
+}
+.order-now .order-now-form .data input ,
+.order-now .order-now-form .data select{
+    color: var(--p_color);
+    font-size: 16px;
+    padding: 10px 8px;
+    width: 94%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--border_color);
+    background: var(--body_background);
+}
+.order-now .order-now-form .data:last-of-type{
+    flex-basis: 100%;
+}
+.order-now .order-now-form .data  .gender-radio{
+    width: fit-content;
+    display: inline-block;
+    margin: 14px 8px 0px 12px;
+}
+.order-now .order-now-form .data span{
+    color: var(--primary_color);
+}
+.order-now .order-now-form .check-btn{
+    margin: 12px 0px 16px;
+    font-size: 17px;
+    padding: 10px 6px;
+    border: none;
+    border-radius: 8px;
+    background: var(--btn_background);
+    color: var(--white_color);
+    width: 220px;
+    cursor: pointer;
+}
+
+@media(max-width:880px){
+    .order-now .order-now-form .data{
+        flex-basis: 100%;
+    }
+} 
+@media(max-width:660px){
+    .order-now .order-now-form{
+        width: 90%;
+    }
+} 
+@media(max-width:480px){
+    .order-now .order-now-form{
+        width: 95%;
+    }
+    .order-now{
+        margin: 0px 0px 30vh;
+    }
+} 

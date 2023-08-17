@@ -1,0 +1,74 @@
+.order-data {
+    margin: 20px 6px 40px;
+    color: var(--primary_color);
+}
+
+.order-data .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.order-data tr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.order-data tr .t-head,
+.order-data tr .t-body {
+    font-weight: bold;
+    overflow: hidden;
+    max-height: 52px;
+    line-height: 52px;
+    display: inline-block;
+    min-width: 192px;
+    text-align: center;
+    position: relative;
+}
+
+.order-data tr .t-head {
+    background: var(--table_head_color);
+    color: var(--black_color);
+}
+
+.order-data .product-body .t-body {
+    border-bottom: 2px solid var(--border_color);
+    border-right: 2px solid var(--border_color);
+}
+
+.order-data .product-body .t-body:nth-last-of-type(3) {
+    border-right: none;
+}
+
+.order-data .del-btn,
+.order-data .view-btn {
+    padding: 0px 11px;
+    font-size: 15px;
+    overflow: hidden;
+    height: 40px;
+    margin: 6px 0px 6px 20px;
+    border-radius: 8px;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+    background: var(--delet_btn_bg);
+}
+
+.order-data .view-btn {
+    background: var(--edit_btn_bg);
+    display: block;
+    text-decoration: none;
+    color: var(--black_color);
+}
+
+/**/
+.order-ifo {
+    background: var(--body_background);
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,51 @@
+.user-data{
+    margin: 20px 6px 40px;
+    color: var(--primary_color);
+}
+.user-data .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.user-data tr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.user-data tr .t-head,.user-data tr .t-body{
+    font-weight: bold;
+    overflow:hidden;
+    height: 52px;
+    line-height: 52px;
+    display: inline-block;
+    width: 192px;
+    text-align: center;
+    position: relative;
+}
+.user-data tr .t-head  {
+    background: var(--table_head_color);
+    color: var(--black_color);
+}
+.user-data .product-body .t-body{
+    border-bottom: 2px solid var(--border_color);
+    border-right: 2px solid var(--border_color);
+ }
+ .user-data .product-body .t-body:nth-last-of-type(2){
+    border-right: none;
+ }
+.user-data .del-btn{
+    padding: 0px 6px;
+    font-size: 15px;
+    overflow: hidden;
+    height: 40px;
+    line-height: 40px;
+    margin: 6px 18px;
+    border-radius: 8px;
+    width: fit-content;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    background: var(--delet_btn_bg);
+}
+

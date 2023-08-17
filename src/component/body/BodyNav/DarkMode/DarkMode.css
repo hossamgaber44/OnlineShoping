@@ -1,0 +1,44 @@
+ .theme-mobe {
+     position: relative;
+     width: 60px;
+     height: 26px;
+     background: var(--theme_bg);
+     margin: 0px 44px;
+     border-radius: 20px;
+     color: #ab9494;
+ }
+
+ .theme-mobe input {
+     opacity: 0;
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     z-index: 999 ;
+     cursor: pointer;
+ }
+
+ .sun,
+ .moon {
+     position: absolute;
+     z-index: 9;
+     line-height: 26px;
+ }
+
+ .sun {
+     left: 6px;
+ }
+
+ .moon {
+     right: 8px;
+ }
+
+ .layout {
+     background: var(--theme_icon_bg);
+     position: absolute;
+     width: 26px;
+     height: 26px;
+     top: 0px;
+     border-radius: 50%;
+     display: block;
+     transition: all .8s ease-in-out;
+ }

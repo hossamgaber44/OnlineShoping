@@ -1,0 +1,87 @@
+.cartegory{
+    flex-basis:23.5%;
+    margin: 12px 0px;
+    text-align: center;
+    flex-wrap: wrap;
+    margin-right: 1.5%;
+}
+.cartegory p{
+    font-size: 14px;
+    color:var( --p_color);
+    max-height: 60px;
+    overflow: hidden
+}
+.cartegory-information{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 18px 0px;
+    color: var(--secondary_color)
+}
+.add-to-card{
+    border: none;
+    width:fit-content;
+    height: 34px;
+    border-radius: 8px;
+    background: var( --btn_background);
+    color: var(--white_color);
+    padding:8px;
+    cursor: pointer;
+}
+.d-btn{
+    width: fit-content;
+    margin: auto;
+}
+ .d-btn button{
+    border: none;
+    color:  var( --btn_background);
+    background: var(--body_background);
+    font-size: 32px;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+.d-btn .quantity{
+    font-size:20px;
+    margin: 0px 8px;
+    background: var( --btn_background);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+@media(max-width:1100px){
+    .cartegory{
+        flex-basis: 31.5%;
+    }   
+}
+@media(max-width:800px){
+    .cartegory{
+        flex-basis: 48%;
+        margin-right: 2%;
+    }   
+}
+@media(max-width:620px){
+    .cartegory{
+        flex-basis: 100%;
+        margin-right: 0;
+    }   
+    .cartegory-img ,.cartegory p{
+        width: 80%;
+        margin: auto;
+    }
+    .cartegory-information{
+        width: 90%;
+        margin: 18px auto;
+    }
+}
+@media(max-width:420px){ 
+    .cartegory-img{
+        width: 100%;
+        margin: auto;
+    }
+    .cartegory-information {
+        margin: 0px 10px;
+    }
+}

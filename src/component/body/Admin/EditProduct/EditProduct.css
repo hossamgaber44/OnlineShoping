@@ -1,0 +1,38 @@
+.edit-product .edit-title{
+    text-align: center;
+    padding: 16px 4px 0px;
+}
+.edit-product .edit-form{
+    padding: 14px;
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 12px;
+    background: #eeeeee;
+}
+.edit-product .edit-form input ,
+.edit-product .edit-form button{
+    width: 86%;
+    display: block;
+    margin: auto;
+    padding: 12px 14px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #d3d1d188;
+    margin: 16px auto;
+    border-radius: 6px;
+}
+.edit-product .edit-form .edit-btn{
+    background: #ffffff;
+    box-shadow: -2px 3px 6px #6fcfdb;
+    cursor: pointer;
+}
+.edit-product .edit-form .edit-btn-wait{
+    background: #f6f6f6;   
+    cursor: pointer;
+
+}
+@media(max-width:480px){
+    .edit-product{
+        min-height: 100vh;
+    }
+}

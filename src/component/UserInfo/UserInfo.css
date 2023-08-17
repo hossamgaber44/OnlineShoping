@@ -1,0 +1,93 @@
+.userInfo{
+    padding: 50px 0px;
+    left: 0px;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    min-height: 100vh;
+    top: 0px;
+    color: var(--primary_color);
+    background: var(--body_background)
+}
+.userInfo .userInfo-content{
+    width: 780px;
+    border-radius: 12px;
+    border: 2px solid var(--border_color);
+    margin: auto;
+    background: var(--body_background)
+}
+.userInfo .user-img-content,.userInfo .footer-userInfo {
+    background: var(--cart_background);
+    padding: 16px 0px;
+    width: 100%;
+}
+.userInfo .user-img{
+    width: 114px;
+    border: 2px solid var(--secondary_color);
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.userInfo .user-img .user-img-border{
+    border-radius: 50%;
+    border: 2px solid var(--body_background);
+    overflow: hidden;
+}
+.userInfo .user-fullName{
+    width: fit-content;
+    margin: auto;
+    padding: 12px 0px;
+    color: var( --primary_color);
+    font-weight: 400;
+}
+.userInfo .user-data h3{
+    padding: 16px 0px;
+    color: var(--p_color);
+    font-weight: 400;
+    font-size: 19px;
+    margin-left: 8px;
+}
+.userInfo .user-data h3 span{
+    color:var( --primary_color);
+    font-size: 19px;
+}
+.userInfo .footer-userInfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userInfo .footer-userInfo .footer-userInfo-btn ,
+.userInfo .footer-userInfo .back-form{
+    text-decoration: none;
+    color:var( --primary_color);
+    padding: 12px;
+    border: none;
+    width: fit-content;
+    margin-left: 16px;
+    background: var(--table_head_color);
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var( --black_color);
+}
+.userInfo .footer-userInfo .back-form{
+    background: var(--delet_btn_bg);
+    margin-right: 16px;
+    text-decoration: none;
+    text-align: center;
+    color: var(--body_background);
+    color: var(--white_color);
+}
+@media(max-width:800px){
+    .userInfo .userInfo-content{
+        width: 92%;
+        margin: auto;
+    }
+}
+@media(max-width:480px){
+    .userInfo{
+        min-height: 180vh;
+    }
+}

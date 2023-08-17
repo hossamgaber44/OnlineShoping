@@ -1,0 +1,102 @@
+.register {
+    position: relative;
+    z-index: 9999;
+    width: 100%;
+    min-height: 100vh;
+    background: var( --body_background);
+    color: var(--primary_color);
+}
+.register .register-title,
+.register .footer-form {
+    background: var(--cart_background);
+    width: 100%;
+    padding:8px 12px;
+}
+.register .form-content {
+    width: 600px;
+    margin: 26px auto;
+    border: 2px solid var( --border_color);
+    border-radius: 8px;
+}
+.register .form-content .register-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.register .form-content .form-input {
+    flex-basis: 48%;
+    margin: 10px 0px;
+}
+
+.register .form-content .form-input-address {
+    flex-basis: 100%;
+    margin: 10px 0px;
+}
+.register .form-content .form-input h3,
+.register .form-content .form-input-address h3 {
+    color:  var(--p_color);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.register .form-content .form-input h3 span,
+.register .form-content .form-input-address h3 span {
+    color: var(--delet_btn_bg);
+}
+
+.register .form-content .form-input input,
+.register .form-content .form-input select,
+.register .form-content .form-input-address textarea {
+    width: 100%;
+    font-family: inherit;
+    padding: 14px 4px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var( --border_color);
+    background: var(--body_background);
+}
+.register .form-content .form-input-address textarea {
+    width: 100%;
+    padding: 14px 4px 0px;
+}
+.register .form-content .form-input .gender-radio {
+    width: fit-content;
+    margin: 12px 6px 0px 14px;
+}
+.register .footer-form .submit-form ,
+.register .footer-form .submit-form-wait{
+    background:  var(--submit_btn_bg);
+    padding: 12px 8px;
+    border: none;
+    color: var(--white_color);
+    border-radius: 6px;
+    width: 62px;
+    cursor: pointer;
+}
+.register .footer-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.register .footer-form .submit-form-wait{
+    background:  var(--submit_btn_bg);
+    opacity: .7;
+}
+.register .footer-form  span{
+    font-size: 15px;
+}
+.register .footer-form a{
+    color: var(--btn_background);
+}
+@media(max-width:880px){
+    .register .form-content .form-input {
+        flex-basis: 100%;
+    }
+} 
+@media(max-width:660px){
+    .register .form-content {
+        width: 90%;
+    }
+} 

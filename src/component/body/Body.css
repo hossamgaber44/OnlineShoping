@@ -1,0 +1,8 @@
+.Body-content{
+    padding: 14vh 0px 0px 230px
+}
+@media(max-width:1000px){
+    .Body-content{
+        padding: 14vh 0px 0px 0px
+    }
+}

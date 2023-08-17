@@ -1,0 +1,62 @@
+.navbar {
+    height: 12vh;
+    border-bottom: 2px solid var(--border_color);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background: var(--nav_background);
+    overflow: hidden;
+}
+
+.navbar .navbar-content {
+    position: relative;
+}
+
+.navbar ul .NavLink {
+    text-decoration: none;
+    color: var( --link_color);
+}
+
+.navbar ul .NavLink .logo-img {
+    height: 12vh;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul .user {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var( --secondary_color);
+    cursor: pointer
+}
+
+.navbar ul .user h3 i {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.navbar ul .user .user-img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--secondary_color);
+    overflow: hidden;
+    margin-left: 12px;
+    overflow: hidden;
+}
+
+.navbar ul .user .user-img div {
+    width: 35px;
+    height: 42px;
+}
+@media (max-width:400px) {
+    .navbar ul .user {
+        width: 52%;
+    }
+}

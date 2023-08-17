@@ -1,0 +1,74 @@
+.login {
+    position: relative;
+    z-index: 9999;
+    width: 100%;
+    min-height: 100vh;
+    background: var( --body_background);
+    color: var(--primary_color);
+}
+.login .login-title,
+.login .footer-form {
+    background: var(--cart_background);
+    width: 100%;
+    padding:8px 12px;
+}
+.login .form-content {
+    margin: 40px auto;
+    width: 440px;
+    border: 2px solid var( --border_color);
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login .form-content .login-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.login .form-content .login-form input{
+    width: 100%;
+    font-family: inherit;
+    padding: 14px 4px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var( --border_color);
+    margin: 0px 0px 18px;
+    background: var(--body_background);
+}
+.login .form-content .login-form label{
+    color: var(--p_color);
+    font-weight: 400;
+    font-size: 18px;
+}
+.login .form-content .login-form label span{
+    color: var(--delet_btn_bg);
+}
+.login .footer-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login .footer-form .submit-form{
+    background: var(--submit_btn_bg);
+    padding: 12px 8px;
+    border: none;
+    border-radius: 6px;
+    width: 62px;
+    cursor: pointer;
+    color: var(--white_color);
+}
+.login .footer-form  span{
+    font-size: 15px;
+}
+.login  .footer-form a{
+    color: var(--btn_background);
+}
+@media(max-width:660px){
+    .login .form-content {
+        width: 90%;
+    }
+} 

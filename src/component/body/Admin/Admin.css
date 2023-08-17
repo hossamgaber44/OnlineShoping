@@ -1,0 +1,95 @@
+.display-product {
+    margin: 20px 6px 40px;
+    color: var(--primary_color);
+}
+
+.display-product .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.display-product tr {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.display-product tr .t-head,
+.display-product tr .t-body {
+    font-weight: bold;
+    overflow: hidden;
+    height: 52px;
+    line-height: 52px;
+    display: inline-block;
+    width: 192px;
+    text-align: center;
+    position: relative;
+}
+
+.display-product tr .t-head {
+    background: var(--table_head_color);
+    color: var(--black_color);
+}
+
+.display-product .product-body .t-body {
+    border-bottom: 2px solid var(--border_color);
+    border-right: 2px solid var(--border_color);
+}
+
+.display-product .product-body .t-body:nth-last-of-type(3) {
+    border-right: none;
+}
+
+.display-product button,
+.display-product .edit-btn {
+    padding: 0px 6px;
+    font-size: 15px;
+    height: 40px;
+    line-height: 40px;
+    margin: 6px 6px;
+    border-radius: 8px;
+    width: fit-content;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.display-product .del-btn {
+    background: var(--delet_btn_bg);
+}
+
+.display-product .edit-btn {
+    text-decoration: none;
+    display: block;
+    background: var(--edit_btn_bg);
+    color: var(--black_color);
+}
+
+.display-product .add-btn {
+    background: var(--add_btn_bg)
+}
+
+.display-product .add-btn-wait {
+    background: var(--add-btn-wait);
+}
+
+.product-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0px 8px;
+}
+
+.display-product input {
+    height: 100%;
+    flex-basis: 14%;
+    border: none;
+    outline: none;
+    text-align: center;
+    background: var(--body_background);
+}
+.display-product input::placeholder{
+    color: var(--primary_color);
+}

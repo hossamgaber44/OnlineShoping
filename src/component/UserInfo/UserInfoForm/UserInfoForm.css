@@ -1,0 +1,114 @@
+.UserInfoForm {
+    left: 0px;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    min-height: 100vh;
+    top: 0px;
+    background: var( --body_background);
+    color: var(--primary_color);
+}
+.UserInfoForm .UserInfoForm-title,
+.UserInfoForm .footer-form {
+    background: var(--cart_background);
+    width: 100%;
+    padding:8px 12px;
+}
+.UserInfoForm .form-content {
+    width: 600px;
+    margin: 26px auto;
+    border: 2px solid var( --border_color);
+    border-radius: 8px;
+}
+.UserInfoForm .form-content .UserInfoForm-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.UserInfoForm .form-content .form-input {
+    flex-basis: 48%;
+    margin: 10px 0px;
+}
+
+.UserInfoForm .form-content .form-input-address {
+    flex-basis: 100%;
+    margin: 10px 0px;
+}
+.UserInfoForm .form-content .form-input h3,
+.UserInfoForm .form-content .form-input-address h3 {
+    color: var(--p_color);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.UserInfoForm .form-content .form-input h3 span,
+.UserInfoForm .form-content .form-input-address h3 span {
+    color: var(--delet_btn_bg);
+}
+
+.UserInfoForm .form-content .form-input input,
+.UserInfoForm .form-content .form-input select,
+.UserInfoForm .form-content .form-input-address textarea {
+    width: 100%;
+    font-family: inherit;
+    padding: 14px 4px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var( --border_color);
+    background: var(--body_background);
+    color: var( --primary_color);
+}
+.UserInfoForm .form-content .form-input-address textarea {
+    width: 100%;
+    padding: 14px 4px 0px;
+}
+.UserInfoForm .form-content .form-input .gender-radio {
+    width: fit-content;
+    margin: 12px 6px 0px 14px;
+}
+.UserInfoForm .footer-form .submit-form ,
+.UserInfoForm .footer-form .submit-form-wait,
+.UserInfoForm .footer-form .back-form{
+    background:  var(--submit_btn_bg);
+    padding: 12px 8px;
+    border: none;
+    color: var(--white_color);
+    border-radius: 6px;
+    width: 62px;
+    cursor: pointer;
+}
+.UserInfoForm .footer-form{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.UserInfoForm .footer-form .submit-form-wait{
+    background:  var(--submit_btn_bg);
+    opacity: .7;
+}
+.UserInfoForm .footer-form .back-form{
+    background: var(--delet_btn_bg);
+    text-decoration: none;
+    padding: 10px 8px;
+    text-align: center;
+}
+.UserInfoForm .footer-form  span{
+    font-size: 15px;
+}
+@media(max-width:880px){
+    .UserInfoForm .form-content .form-input {
+        flex-basis: 100%;
+    }
+} 
+@media(max-width:660px){
+    .UserInfoForm .form-content {
+        width: 90%;
+    }
+} 
+@media(max-width:480px){
+    .UserInfoForm {
+        min-height: 180vh;
+    }
+}

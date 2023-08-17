@@ -1,0 +1,23 @@
+.hidden-price{
+   display: none;
+}
+.totalprice{
+    width: 230px;
+    background: var(--cart_background);
+    margin: 30px auto;
+    padding: 22px 10px;
+    color: var(--secondary_color);
+    display: flex;
+    align-items: center;
+}
+.total-price-title{
+    font-size: 20px;
+}
+.total-price-content{
+    font-size: 20px;
+    display: inline-block;
+    width: 76px;
+    overflow: hidden;
+    padding: 0px 6px;
+}
+
